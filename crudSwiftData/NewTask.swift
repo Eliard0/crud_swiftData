@@ -33,7 +33,6 @@ struct NewTask: View {
                 ToolbarItem(placement: .navigationBarTrailing){
                     Button("Adicionar"){
                         addNewTask()
-                        dismiss()
                     }
                     .disabled(description.isEmpty)
                 }
@@ -43,11 +42,19 @@ struct NewTask: View {
     }
     
     private func addNewTask(){
-        let newTask = ModelTask(title: title, description: description)
-        context.insert(newTask)
+        let titleValidatio = title.trimmingCharacters(in: .whitespacesAndNewlines)
+        let decriptionValidation = description.trimmingCharacters(in: .whitespacesAndNewlines)
         
+        if titleValidatio.isEmpty || decriptionValidation.isEmpty {
+            return
+        }
+        
+        let newTask = ModelTask(title: titleValidatio, description: decriptionValidation)
+        
+        context.insert(newTask)
         do {
             try context.save()
+            dismiss()
         } catch {
             print("Erro ao cadastrar a tarefa")
         }

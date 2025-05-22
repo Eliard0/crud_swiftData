@@ -15,7 +15,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack{
-            VStack {
+            VStack(alignment: .leading) {
                 List{
                     ForEach(tasks) { task in
                         NavigationLink {
@@ -40,6 +40,7 @@ struct ContentView: View {
                             }
                         }
                     }
+                    .onDelete(perform: deleteTask)
                 }
             }
             .navigationTitle("Tarefas")
@@ -56,6 +57,19 @@ struct ContentView: View {
             .sheet(isPresented: $showViewNewTask){
                 NewTask()
             }
+        }
+    }
+    
+    private func deleteTask(at offsets: IndexSet){
+        for index in offsets {
+            let task = tasks[index]
+            context.delete(task)
+        }
+        
+        do{
+            try context.save()
+        }catch {
+            print("erro ao deletar")
         }
     }
 }
