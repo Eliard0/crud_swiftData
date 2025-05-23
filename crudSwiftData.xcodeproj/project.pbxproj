@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		E9AB45712DDFA08E003E704C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E935673A2DCB8F6700AF4E7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E93567412DCB8F6700AF4E7A;
+			remoteInfo = crudSwiftData;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		E93567422DCB8F6700AF4E7A /* crudSwiftData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crudSwiftData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9AB456D2DDFA08D003E704C /* crudSwiftDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = crudSwiftDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = crudSwiftData;
 			sourceTree = "<group>";
 		};
+		E9AB456E2DDFA08E003E704C /* crudSwiftDataTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = crudSwiftDataTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E935673F2DCB8F6700AF4E7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9AB456A2DDFA08D003E704C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				E93567442DCB8F6700AF4E7A /* crudSwiftData */,
+				E9AB456E2DDFA08E003E704C /* crudSwiftDataTests */,
 				E93567432DCB8F6700AF4E7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				E93567422DCB8F6700AF4E7A /* crudSwiftData.app */,
+				E9AB456D2DDFA08D003E704C /* crudSwiftDataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = E93567422DCB8F6700AF4E7A /* crudSwiftData.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E9AB456C2DDFA08D003E704C /* crudSwiftDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9AB45732DDFA08E003E704C /* Build configuration list for PBXNativeTarget "crudSwiftDataTests" */;
+			buildPhases = (
+				E9AB45692DDFA08D003E704C /* Sources */,
+				E9AB456A2DDFA08D003E704C /* Frameworks */,
+				E9AB456B2DDFA08D003E704C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9AB45722DDFA08E003E704C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E9AB456E2DDFA08E003E704C /* crudSwiftDataTests */,
+			);
+			name = crudSwiftDataTests;
+			packageProductDependencies = (
+			);
+			productName = crudSwiftDataTests;
+			productReference = E9AB456D2DDFA08D003E704C /* crudSwiftDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					E93567412DCB8F6700AF4E7A = {
 						CreatedOnToolsVersion = 16.3;
+					};
+					E9AB456C2DDFA08D003E704C = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = E93567412DCB8F6700AF4E7A;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				E93567412DCB8F6700AF4E7A /* crudSwiftData */,
+				E9AB456C2DDFA08D003E704C /* crudSwiftDataTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E93567402DCB8F6700AF4E7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9AB456B2DDFA08D003E704C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9AB45692DDFA08D003E704C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9AB45722DDFA08E003E704C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E93567412DCB8F6700AF4E7A /* crudSwiftData */;
+			targetProxy = E9AB45712DDFA08E003E704C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E935674B2DCB8F6A00AF4E7A /* Debug */ = {
@@ -256,8 +331,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -283,8 +357,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,6 +368,40 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E9AB45742DDFA08E003E704C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = frist.crudSwiftDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/crudSwiftData.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/crudSwiftData";
+			};
+			name = Debug;
+		};
+		E9AB45752DDFA08E003E704C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = frist.crudSwiftDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/crudSwiftData.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/crudSwiftData";
 			};
 			name = Release;
 		};
@@ -315,6 +422,15 @@
 			buildConfigurations = (
 				E935674E2DCB8F6A00AF4E7A /* Debug */,
 				E935674F2DCB8F6A00AF4E7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9AB45732DDFA08E003E704C /* Build configuration list for PBXNativeTarget "crudSwiftDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9AB45742DDFA08E003E704C /* Debug */,
+				E9AB45752DDFA08E003E704C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
